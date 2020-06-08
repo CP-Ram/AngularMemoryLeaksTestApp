@@ -1,0 +1,9 @@
+<div>Classes Destroy Test</div>
+<hr>
+<button (click)="initializeForm()">initialize form</button>
+<button (click)="destroyForm()">destroy form</button>
+
+
+<div id="form-container" *ngIf="appService.isInitialization">
+  <app-form></app-form>
+</div>
